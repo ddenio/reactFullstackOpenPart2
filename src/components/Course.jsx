@@ -4,7 +4,7 @@ import Content from "./Content"
 const Course = ({courses}) => {
     console.log("props are", courses)
     return (
-        <ul>
+        <>
             {courses.map(course =>
                 <div key={course.id}> 
                     <Header text={course.name} />
@@ -12,7 +12,7 @@ const Course = ({courses}) => {
                 </div>
             )}
             
-        </ul> 
+        </> 
         
         // <div>  
         //     <Header text={course.name}/>
