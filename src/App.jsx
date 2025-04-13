@@ -28,6 +28,11 @@ const App = () => {
         name: 'Advanced State',
         exercises: 9,
         id: 4
+      },
+      {
+        name: 'Map and Reduce on Objects',
+        exercises: 5,
+        id: 5
       }
     ]
   }
