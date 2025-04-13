@@ -1,13 +1,23 @@
 import Header from "./Header"
 import Content from "./Content"
 
-const Course = ({course}) => {
-    //console.log("props are", course.name)
+const Course = ({courses}) => {
+    console.log("props are", courses)
     return (
-        <div>  
-            <Header text={course.name}/>
-            <Content parts={course.parts}/>
-        </div>
+        <ul>
+            {courses.map(course =>
+                <div key={course.id}> 
+                    <Header text={course.name} />
+                    <Content parts={course.parts} />
+                </div>
+            )}
+            
+        </ul> 
+        
+        // <div>  
+        //     <Header text={course.name}/>
+        //     <Content parts={course.parts}/>
+        // </div>
     )
   }
 
