@@ -1,9 +1,13 @@
+import Part from "./Part"
 
-
-const Content = ({ part }) => {
-    console.log("content props:", part)
+const Content = ({ parts }) => {
+    console.log("content props:", parts)
     return (
-        <li>{part.name}</li>
+        <ul>
+            {parts.map(part => 
+                <Part key={part.id} part={part} />
+            )}
+        </ul> 
     )
   }
 
