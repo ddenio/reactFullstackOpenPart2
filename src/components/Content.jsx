@@ -1,4 +1,5 @@
 import Part from "./Part"
+import Total from "./Total"
 
 const Content = ({ parts }) => {
     console.log("content props:", parts)
@@ -7,6 +8,8 @@ const Content = ({ parts }) => {
             {parts.map(part => 
                 <Part key={part.id} part={part} />
             )}
+
+            <Total parts={parts}/>
         </ul> 
     )
   }
